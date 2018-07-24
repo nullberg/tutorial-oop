@@ -34,6 +34,12 @@ class arithmetic:
     def subtract(a,b):
         return a-b
 ```
+You would call the methods as illustrated in the following example:
+```python
+print('3 plus 4 is:')
+print(arithmetic.add(3,4))
+```
+
 
 ## Objects
 Great. So we we know about classes, and static variables and static methods. So what does it mean to create an instance of a class, or object, and why do we need this? Again, one reason is related to scaling. Classes and objects helps to organize your code, especially for lots and lots of code. But an even more fundamental reason also has to do with variable scope.
