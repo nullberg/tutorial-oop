@@ -3,6 +3,9 @@ This is a simple tutorial on object-oriented programming, in Python. There are m
 
 ## Table of Contents
 * [Static variables](#static-variables)
+* [Static methods](#static-methods)
+* [Objects](#objects)
+* [Another example](#another-example)
 
 
 ## Static variables
