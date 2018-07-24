@@ -69,7 +69,28 @@ class car:
     	self.speed = self.speed + x
 
 myCar = car()
-print('Speed of my car =',myCar.speed)
+print 'Speed of my car =', myCar.speed
 myCar.increaseSpeed(12)
-print('Speed of my car =',myCar.speed)
+print 'Speed of my car =', myCar.speed
+```
+If you create a class that you plan to make instances of (create objects), you must include what is called the constructor, which is the '__init__' function. The 'self' keyword is a generic variable which refers to the object, in the class. The constructor must at least take 'self' as an argument. The attributes (properties) of the object are defined in the constructor. If we make an instance of our 'car' class, that object has one attribute: speed. We access that attribute by calling 'self.speed'. Also note that we pass 'self' in our 'increaseSpeed' function, so that we can access the attributes of the object in the function.
+
+## Another example
+Let us look at another class example.
+```python
+class car:
+
+    def __init__(self,brand,color):
+        self.brand = brand
+	self.color = color
+	self.speed = 0
+
+    def increaseSpeed(self,x):
+        self.speed = self.speed + x
+
+    def decreaseSpeed(self,x):
+        self.speed = self.speed - x
+
+myCar = car('BMW','blue')
+myCar.increaseSpeed(50)
 ```
