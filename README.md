@@ -1,5 +1,5 @@
 # Simple OOP Tutorial
-This is a simple tutorial on object-oriented programming, in Python. There are many tutorials out there which explain OOP. Many are great, but also many are confusing. This is my take on how to best explain the basics. The tutorial is also designed to be short, so you do not need to read chapters and chapters of material.
+This is a simple tutorial on object-oriented programming, in Python. There are many tutorials out there which explain OOP. Many are great, but many are also confusing. This is my take on how to best explain the basics. You may have attempted to read up on OOP before, but not quite understood it, or why you need it. I hope this tutorial can clarify things.
 
 ## Static variables
 Let us start with an example. Say you need some variables with names of colors that contain strings of their hexadecimal representation. One way to go about this is to define the variables as follows:
@@ -36,4 +36,21 @@ class arithmetic:
 ```
 
 ## Objects
-Great. So we we know about classes, and static variables and static methods. So what does it mean to create an instance of a class, or object, and why do we need this? 
+Great. So we we know about classes, and static variables and static methods. So what does it mean to create an instance of a class, or object, and why do we need this? Again, one reason is related to scaling. Classes and objects helps to organize your code, especially for lots and lots of code. But an even more fundamental reason also has to do with variable scope.
+
+Say you have a car, and a variable associated with it: 'mySpeed'. Say you want a function to increase your speed by a specified amount. Perhaps you have tried something like this before:
+```python
+mySpeed = 40
+
+def increaseSpeed(x):
+    mySpeed = mySpeed + x
+```
+But this does NOT work. The only way to "hack" this to make it work is to reference 'mySpeed' as a global variable, inside the function.
+```python
+mySpeed = 40
+
+def increaseSpeed(x):
+    global mySpeed
+    mySpeed = mySpeed + x
+```
+The problem is, this is BAD programming practice. It is not a smooth way to work with code, and it is not efficient for doing anything.
