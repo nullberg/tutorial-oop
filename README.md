@@ -53,4 +53,18 @@ def increaseSpeed(x):
     global mySpeed
     mySpeed = mySpeed + x
 ```
-The problem is, this is BAD programming practice. It is not a smooth way to work with code, and it is not efficient for doing anything.
+The problem is, this is BAD programming practice. It is not a smooth way to work with code, and it is not efficient for doing anything. Rather, the way to approach this problem is to use OOP.
+```python
+class car:
+
+    def __init__(self):
+        self.speed = 0
+
+    def increaseSpeed(x):
+    	self.speed = self.speed + x
+
+myCar = car()
+print('Speed of my car =',myCar.speed)
+myCar.increaseSpeed(12)
+print('Speed of my car =',myCar.speed)
+```
