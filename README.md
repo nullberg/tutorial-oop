@@ -2,7 +2,7 @@
 This is a simple tutorial on object-oriented programming, in Python. There are many tutorials out there which explain OOP. Many are great, but many are also confusing. This is my take on how to best explain the basics. You may have attempted to read up on OOP before, but not quite understood it, or why you need it. I hope this tutorial can clarify things.
 
 ## Table of Contents
-* [Static variables](#Static variables)
+* [Static variables](#static-variables)
 
 
 ## Static variables
