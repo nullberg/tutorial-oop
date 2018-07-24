@@ -15,11 +15,10 @@ class color:
     green = '00ff00'
     blue = '0000ff'
 ```
-The way to access these variables is as follows:
+These variables are called class variables, or static variables, because they are static and you do not need to create an instance of the class (aka an object) to get hold of the variables, they belong to the class. The way to access these variables is as follows:
 ```python
-myColor = color.red
+print('Red in hexadecimal is ' + color.red)
 ```
-These variables are called class variables, or static variables, because they are static and you do not need to create an instance of the class (aka an object) to get hold of the variables, they belong to the class.
 
 ## Static methods
 There are also such things called class (or static) methods/functions. Say you have a set of functions which are related, then similarly you can group them in the same class:
