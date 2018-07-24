@@ -66,7 +66,7 @@ class car:
     def __init__(self):
         self.speed = 0
 
-    def increaseSpeed(x):
+    def increaseSpeed(self,x):
     	self.speed = self.speed + x
 
 myCar = car()
